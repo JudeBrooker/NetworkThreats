@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>beans</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<script src="script.js"></script>
+<button onclick="clickme">st</button>
+<h1>Network Security</h1>
+<table>
+    <tr>
+        <th>Security Principle (CIA)</th>
+        <th>Threat</th>
+        <th>Ways to minimise threat</th>
+    </tr>
+    <tr>
+        <td><b>C</b>onfidentiality<br>Keeping data private</td>
+        <td><b>Brute force attack</b> - attacker uses software to repeatedly try different passwords to gain access
+            <br><b>Spyware</b> -  software that aims to gather information about a person or organization and send it to another entity in a way that harms the user; for example by violating their privacy or endangering their device's security.  Examples include keyloggers, trackers, trojans
 
+            <br><b>Phishing</b> - a type of social engineering attack which involves getting a user to enter personal information via a fake website.
+
+            <br><b>Pharming</b> - involves modifying DNS entries (local by changing the hosts file or DNS server), which causes users to be directed to the wrong website when they visit a certain web address.  The aim is to capture user login credentials. To change local DNS, attackers  install malware.  Attackers take advantage of exploits in software that control DNS servers.
+
+            <br><b>Packet sniffing/eavesdropping</b> - with software like WireShark where the attacker gathers packet data.  If traffic includes passing unencrypted passwords, an unauthorized individual can potentially access your accounts and read confidential data.
+
+            <br><b>IP spoofing</b> - creating IP packets with false source IP address for the purpose of impersonating another computer.  IP address spoofing is most frequently used in denial-of-service attacks, where the objective is to flood the target with an overwhelming volume of traffic, and the attacker does not care about receiving responses to the attack packets. Packets with spoofed IP addresses are more difficult to filter since each spoofed packet appears to come from a different address, and they hide the true source of the attack</td>
+        <td>
+            <ul>
+                <li>Only allow three password attempts before account is locked</li>
+                <li>Use strong passwords</li>
+                <li>Use Captcha</li>
+                <li>Two factor authentication (like banks)</li>
+                <br>
+                <li>Anti-spyware</li>
+                <li>Don't download materials from unreliable or unknown sources;</li>
+                <br>
+                <li>Spam filter</li>
+                <li>Ask users to select a personal image and display this user-selected image with any forms that request a password. </li>
+                <li>Train staff so they recognize legitimate and suspicious emails and websites eg check URL for typos.</li>
+                <br>
+                <li>Install antivirus software, keep it updated and run daily.</li>
+                <li>Don't open dubious files that may contain malware</li>
+                <br>
+                <li>Proxy server or router with NAT to hide network</li>
+                <li>Use WPA2 (Wi-Fi Protected Access - the encryption protocol that is used to secure Wi-Fi connections. It provides unique encryption keys for each wireless client that connects. </li>
+                <li>Use only secure web connections (HTTPS)</li>
+                <li>Only accept SSL Certificate from trusted sources</li>
+                <li>Use a secure VPN (one that uses encryption) - see below</li>
+                <li>Don't use default password</li>
+                <br>
+                <li>Use a packet filtering firewall (see below)</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><b>I</b>ntegrity<br>Preventing data modification</td>
+        <td><b>Man in the Middle Attack</b> -  message/file  integrity (so you know the message has not been tampered with)
+            <br><b>SQL Injection</b> (see <a href="https://www.w3schools.com/sql/sql_injection.asp">https://www.w3schools.com/sql/sql_injection.asp)</a> </td>
+        <td>
+            <ul>
+                <li>Hashing, Digital signatures, VPN, don't use public hotspots</li>
+                <br>
+                <li>Form Validation, Prepared Statements (with parameterized queries) as in your coursework!</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><b>A</b>vailability<br>Keeping your networdk services up and running</td>
+        <td>
+            <b>DoS and DDos Attacks</b> (see IP spoofing above)<br><b>Malicious software or malware</b> eg viruses (require an active host program to run, usually attached to executable file)  and worms (stand-alone malicious programs that can self-replicate and propagate via computer networks, without human help).  Rootkit is a collection of software tools that enables remote control and administration-level access over a computer or computer networks. Once remote access is obtained, the rootkit can perform a number of malicious actions; they come equipped with keyloggers, password stealers and antivirus disablers.
+            <br><b>Physical damage</b> eg fire, flood accidental or malicious
+        </td>
+        <td>
+            <ul>
+                <li>Packet filtering firewall</li>
+                <li>Automatically update software as patches (changes to software to update, fix, or improve it eg to fix security vulnerability) are released</li>
+                <br>
+                <li>Anti-virus software, patch update,</li>
+                <li>Firewall</li>
+                <li>Train staff so they recognize legitimate and suspicious emails and websites.</li>
+                <br>
+                <li>Server rooms are kept secure eg biometrics required for entry</li>
+                <li>Log all admin level accesses with date, times and usernames.</li>
+                <li>Maintain backups.</li>
+            </ul>
+        </td>
+    </tr>
+</table>
 </body>
 </html>
