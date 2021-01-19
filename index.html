@@ -37,7 +37,7 @@
         </td>
     </tr>
     <tr>
-        <td><br><b>Phishing</b> - a type of social engineering attack which involves getting a user to enter personal information via a fake website.</td>
+        <td><b>Phishing</b> - a type of social engineering attack which involves getting a user to enter personal information via a fake website.</td>
         <td>
             <ul>
                 <li>Spam filter</li>
@@ -47,7 +47,7 @@
         </td>
     </tr>
     <tr>
-        <td><br><b>Pharming</b> - involves modifying DNS entries (local by changing the hosts file or DNS server), which causes users to be directed to the wrong website when they visit a certain web address.  The aim is to capture user login credentials. To change local DNS, attackers  install malware.  Attackers take advantage of exploits in software that control DNS servers.
+        <td><b>Pharming</b> - involves modifying DNS entries (local by changing the hosts file or DNS server), which causes users to be directed to the wrong website when they visit a certain web address.  The aim is to capture user login credentials. To change local DNS, attackers  install malware.  Attackers take advantage of exploits in software that control DNS servers.
         </td>
         <td>
             <ul>
@@ -57,7 +57,7 @@
         </td>
     </tr>
     <tr>
-        <td><br><b>Packet sniffing/eavesdropping</b> - with software like WireShark where the attacker gathers packet data.  If traffic includes passing unencrypted passwords, an unauthorized individual can potentially access your accounts and read confidential data.
+        <td><b>Packet sniffing/eavesdropping</b> - with software like WireShark where the attacker gathers packet data.  If traffic includes passing unencrypted passwords, an unauthorized individual can potentially access your accounts and read confidential data.
         </td>
         <td>
             <ul>
@@ -71,7 +71,7 @@
         </td>
     </tr>
     <tr>
-        <td><br><b>IP spoofing</b> - creating IP packets with false source IP address for the purpose of impersonating another computer.  IP address spoofing is most frequently used in denial-of-service attacks, where the objective is to flood the target with an overwhelming volume of traffic, and the attacker does not care about receiving responses to the attack packets. Packets with spoofed IP addresses are more difficult to filter since each spoofed packet appears to come from a different address, and they hide the true source of the attack</td>
+        <td><b>IP spoofing</b> - creating IP packets with false source IP address for the purpose of impersonating another computer.  IP address spoofing is most frequently used in denial-of-service attacks, where the objective is to flood the target with an overwhelming volume of traffic, and the attacker does not care about receiving responses to the attack packets. Packets with spoofed IP addresses are more difficult to filter since each spoofed packet appears to come from a different address, and they hide the true source of the attack</td>
         <td>
             <ul>
                 <li>Use a packet filtering firewall (see below)</li>
@@ -89,7 +89,7 @@
     </tr>
     <tr>
         <td>
-            <br><b>SQL Injection</b> (see <a href="https://www.w3schools.com/sql/sql_injection.asp">https://www.w3schools.com/sql/sql_injection.asp)</a> </td>
+            <b>SQL Injection</b> (see <a href="https://www.w3schools.com/sql/sql_injection.asp">https://www.w3schools.com/sql/sql_injection.asp)</a> </td>
         <td>
             <ul>
                 <li>Form Validation, Prepared Statements (with parameterized queries) as in your coursework!</li>
@@ -97,20 +97,32 @@
         </td>
     </tr>
     <tr>
-        <td><b>A</b>vailability<br>Keeping your networdk services up and running</td>
-        <td>
-            <b>DoS and DDos Attacks</b> (see IP spoofing above)<br><b>Malicious software or malware</b> eg viruses (require an active host program to run, usually attached to executable file)  and worms (stand-alone malicious programs that can self-replicate and propagate via computer networks, without human help).  Rootkit is a collection of software tools that enables remote control and administration-level access over a computer or computer networks. Once remote access is obtained, the rootkit can perform a number of malicious actions; they come equipped with keyloggers, password stealers and antivirus disablers.
-            <br><b>Physical damage</b> eg fire, flood accidental or malicious
+        <td rowspan="3"><b>A</b>vailability<br>Keeping your network services up and running</td>
+        <td><b>DoS and DDos Attacks</b> (see IP spoofing above)
         </td>
         <td>
             <ul>
                 <li>Packet filtering firewall</li>
                 <li>Automatically update software as patches (changes to software to update, fix, or improve it eg to fix security vulnerability) are released</li>
-                <br>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Malicious software or malware</b> eg viruses (require an active host program to run, usually attached to executable file)  and worms (stand-alone malicious programs that can self-replicate and propagate via computer networks, without human help).  Rootkit is a collection of software tools that enables remote control and administration-level access over a computer or computer networks. Once remote access is obtained, the rootkit can perform a number of malicious actions; they come equipped with keyloggers, password stealers and antivirus disablers.
+        </td>
+        <td>
+            <ul>
                 <li>Anti-virus software, patch update,</li>
                 <li>Firewall</li>
                 <li>Train staff so they recognize legitimate and suspicious emails and websites.</li>
-                <br>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Physical damage</b> eg fire, flood accidental or malicious
+        </td>
+        <td>
+            <ul>
                 <li>Server rooms are kept secure eg biometrics required for entry</li>
                 <li>Log all admin level accesses with date, times and usernames.</li>
                 <li>Maintain backups.</li>
